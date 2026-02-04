@@ -341,7 +341,8 @@ span {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
-}
+    align-items: stretch;
+} 
 
 .reviews-item {
     min-height: 450px;
@@ -354,7 +355,7 @@ span {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 1.5rem;
     color: var(--text-color);
@@ -382,6 +383,23 @@ span {
     color: gold;
     font-size: 2rem;
 }
+
+.rating i.black-star{
+    color: black;
+}
+
+.rating2 i{
+    color: black;
+    font-size: 2rem;
+}
+
+/* Contact form helpers */
+.honeypot-wrapper { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.honeypot { position: absolute; left: -9999px; }
+
+.contact-feedback { margin-top: 1rem; min-height: 2.4rem; font-size: 1.6rem; }
+.contact-feedback.success { color: #0a8a3e; }
+.contact-feedback.error { color: #c62828; }
 
 /* Responsive tweaks */
 @media (max-width: 900px) {

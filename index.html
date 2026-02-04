@@ -15,7 +15,7 @@
 
      <header class="header">
 
-        <a href="#home" class="logo">Testo test test testy</a>
+        <a href="#home" class="logo">This is just a TEST :)(: </a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -38,7 +38,7 @@
             <h3>Hello, my name is</h3>
             <!-- <h3>I am</h3> -->
             <h1>Chester Vonne Cairel</h1>
-            <h3>And im a <span class="multiple-text"> Junior Software Developer</span></h3>
+            <h3>And im a <span class="multiple-text"> Junior Web Developer</span></h3>
              <p>Welcome to my portfolio website!</p>
              
               <div class="social-media">
@@ -58,8 +58,10 @@
       <section class="about" id="about">
          <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>I'm a <span class="highlight">Frontend Developer</span></h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <h3>I'm a <span class="highlight">Backend Developer</span></h3>
+            <p> I am a Junior Web Developer with a strong interest in backend development. I focus on building reliable, efficient, and maintainable server-side applications. I enjoy working with databases, APIs, and backend logic, and I am continuously improving my skills in writing clean code and understanding system workflows.
+
+I am eager to learn from real-world projects, collaborate with experienced developers, and contribute to scalable web solutions. I value good coding practices, problem-solving, and clear communication in a team environment. </p>
             <a href="#" class="btn">Read More</a>
          </div>
          <div class="about-img">
@@ -115,7 +117,10 @@
                             <i class="bx bxs-star star"></i>
                             <i class="bx bxs-star star"></i>
                         </div>
-                        <p>Chester is an exceptional software developer who consistently delivers high-quality work. His problem-solving skills and attention to detail are impressive. He is a great team player and communicates effectively. I highly recommend him for any software development project.</p>
+                        <p>Chester demonstrates exceptional speed in copying and pasting code.
+Occasionally, he pastes first and asks questions later—but to his credit, he does ask.
+He understands code right after I explain it… sometimes on the second explanation.
+Overall, a fast learner once the code compiles.</p>
                     </div>
 
                                         <div class="reviews-item">
@@ -127,9 +132,13 @@
                             <i class="bx bxs-star star"></i>
                             <i class="bx bxs-star star"></i>
                             <i class="bx bxs-star star"></i>
-                            <i class="bx bxs-star star"></i>
+                            <i class="bx bxs-star star black-star"></i>
                         </div>
-                        <p>Chester is an exceptional software developer who consistently delivers high-quality work. His problem-solving skills and attention to detail are impressive. He is a great team player and communicates effectively. I highly recommend him for any software development project.</p>
+                        
+                        <p>High efficiency in acquiring solutions.
+Primary method: observe → copy → adapt → pretend it was planned.
+Debugging skills increase dramatically after the first error message.
+Logical improvement detected.</p>
                     </div>
 
                                         <div class="reviews-item">
@@ -143,7 +152,10 @@
                             <i class="bx bxs-star star"></i>
                             <i class="bx bxs-star star"></i>
                         </div>
-                        <p>Chester is an exceptional software developer who consistently delivers high-quality work. His problem-solving skills and attention to detail are impressive. He is a great team player and communicates effectively. I highly recommend him for any software development project.</p>
+                        <p>User copied an answer from 2016.
+It somehow worked.
+Question lacked clarity but showed effort.
+Commented ‘thanks, it worked’ and disappeared forever.</p>
                     </div>
                 </div>
             </div>
@@ -155,18 +167,26 @@
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me</span></h2>
 
-            <form action="#">
+            <form id="contact-form" action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" name="Email" placeholder="Email Address">
+                <input type="text" name="name" id="contact-name" placeholder="Full Name (optional)">
+                <input type="email" name="email" id="contact-email" placeholder="Email Address (optional)">
             </div>   
             <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="phone" id="contact-phone" placeholder="Phone Number (optional)">
+                <input type="text" name="subject" id="contact-subject" placeholder="Subject (optional)">
 
             </div>
-               <textarea name="message" id="message" rows="6" cols="30" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
+               <textarea name="message" id="contact-message" rows="6" cols="30" placeholder="Your Message" required></textarea>
+
+               <!-- honeypot: visible to bots but hidden from users -->
+               <div class="honeypot-wrapper" aria-hidden="true">
+                   <label class="honeypot-label">Leave this field blank</label>
+                   <input type="text" name="hp" id="contact-hp" class="honeypot" autocomplete="off" tabindex="-1">
+               </div>
+
+                <div id="contact-feedback" class="contact-feedback" role="status" aria-live="polite"></div>
+                <button type="submit" id="contact-submit" class="btn">Send Message</button>
                </form>
         </section>
 
